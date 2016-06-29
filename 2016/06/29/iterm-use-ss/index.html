@@ -5,31 +5,28 @@
   
   <title>通过ShadowSocks给iterm提供翻墙 | RUARUARUA</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="##为什么ss不能为iTerm提供翻墙
-shadowsocks代理属于socks5代理，是一种可以为浏览器翻墙的工具，ssh代理无法像vpn一样实现全局代理。
-##如何为iTerm翻墙
-###工具安装需要借助工具ProxyChains-ng，首先安装工具：
+  <meta name="description" content="无效原因shadowsocks代理属于socks5代理，是一种可以为浏览器翻墙的工具，ssh代理无法像vpn一样实现全局代理。
+工具安装需要借助工具ProxyChains-ng，首先安装工具：
 1brew install proxychains-ng
-如果出现brew的command找不到，可能是因为brew尚未安装，相关信息：Hom">
+如果出现brew的command找不到，可能是因为brew尚未安装，相关信息：Homebrew
+工具配置找到proxychains4的配置文件，在文">
 <meta property="og:type" content="article">
 <meta property="og:title" content="通过ShadowSocks给iterm提供翻墙">
 <meta property="og:url" content="http://yoursite.com/2016/06/29/iterm-use-ss/index.html">
 <meta property="og:site_name" content="RUARUARUA">
-<meta property="og:description" content="##为什么ss不能为iTerm提供翻墙
-shadowsocks代理属于socks5代理，是一种可以为浏览器翻墙的工具，ssh代理无法像vpn一样实现全局代理。
-##如何为iTerm翻墙
-###工具安装需要借助工具ProxyChains-ng，首先安装工具：
+<meta property="og:description" content="无效原因shadowsocks代理属于socks5代理，是一种可以为浏览器翻墙的工具，ssh代理无法像vpn一样实现全局代理。
+工具安装需要借助工具ProxyChains-ng，首先安装工具：
 1brew install proxychains-ng
-如果出现brew的command找不到，可能是因为brew尚未安装，相关信息：Hom">
-<meta property="og:updated_time" content="2016-06-29T03:25:10.000Z">
+如果出现brew的command找不到，可能是因为brew尚未安装，相关信息：Homebrew
+工具配置找到proxychains4的配置文件，在文">
+<meta property="og:updated_time" content="2016-06-29T03:34:48.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="通过ShadowSocks给iterm提供翻墙">
-<meta name="twitter:description" content="##为什么ss不能为iTerm提供翻墙
-shadowsocks代理属于socks5代理，是一种可以为浏览器翻墙的工具，ssh代理无法像vpn一样实现全局代理。
-##如何为iTerm翻墙
-###工具安装需要借助工具ProxyChains-ng，首先安装工具：
+<meta name="twitter:description" content="无效原因shadowsocks代理属于socks5代理，是一种可以为浏览器翻墙的工具，ssh代理无法像vpn一样实现全局代理。
+工具安装需要借助工具ProxyChains-ng，首先安装工具：
 1brew install proxychains-ng
-如果出现brew的command找不到，可能是因为brew尚未安装，相关信息：Hom">
+如果出现brew的command找不到，可能是因为brew尚未安装，相关信息：Homebrew
+工具配置找到proxychains4的配置文件，在文">
   
     <link rel="alternate" href="/atom.xml" title="RUARUARUA" type="application/atom+xml">
   
@@ -100,13 +97,11 @@ shadowsocks代理属于socks5代理，是一种可以为浏览器翻墙的工具
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>##为什么ss不能为iTerm提供翻墙</p>
-<p>shadowsocks代理属于socks5代理，是一种可以为浏览器翻墙的工具，ssh代理无法像vpn一样实现全局代理。</p>
-<p>##如何为iTerm翻墙</p>
-<p>###工具安装<br>需要借助工具ProxyChains-ng，首先安装工具：</p>
+        <h2 id="无效原因"><a href="#无效原因" class="headerlink" title="无效原因"></a>无效原因</h2><p>shadowsocks代理属于socks5代理，是一种可以为浏览器翻墙的工具，ssh代理无法像vpn一样实现全局代理。</p>
+<h2 id="工具安装"><a href="#工具安装" class="headerlink" title="工具安装"></a>工具安装</h2><p>需要借助工具ProxyChains-ng，首先安装工具：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install proxychains-ng</span><br></pre></td></tr></table></figure>
 <p>如果出现brew的command找不到，可能是因为brew尚未安装，相关信息：<a href="http://brew.sh" target="_blank" rel="external">Homebrew</a></p>
-<p>###工具配置<br>找到proxychains4的配置文件，在文件尾部添加如下代码socks5 127.0.0.1 1080（如果已经有直接退出就好）</p>
+<h2 id="工具配置"><a href="#工具配置" class="headerlink" title="工具配置"></a>工具配置</h2><p>找到proxychains4的配置文件，在文件尾部添加如下代码socks5 127.0.0.1 1080（如果已经有直接退出就好）</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim /usr/<span class="built_in">local</span>/etc/proxychains.conf</span><br></pre></td></tr></table></figure>
 <p>可以通过google进行测试：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">proxychains4 curl www.google.com</span><br></pre></td></tr></table></figure>
@@ -115,7 +110,7 @@ shadowsocks代理属于socks5代理，是一种可以为浏览器翻墙的工具
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/29/iterm-use-ss/" data-id="ciq0bkg6a0000ix20gsql3lqi" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/06/29/iterm-use-ss/" data-id="ciq0buls80001kn208tbbafph" class="article-share-link">Share</a>
       
       
     </footer>
